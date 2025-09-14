@@ -1,0 +1,13 @@
+.contact_bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    color: black;
+}
+
+body{
+    background-color: rgb(32, 34, 36);
+    color: rgb(214, 236, 255);
+}
