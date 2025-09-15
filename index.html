@@ -3,49 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Andrea Subashi Resume</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="contact_bar">
-            <h3>Contact: </h3>
-            <a href="https://github.com/AndreaSubashi" target="_blank" rel="noreferrer"><img src="images/github.svg" alt="gtihubIcon" height="30px"></a>
-            <a href="https://www.linkedin.com/in/andreasubashi/" target="_blank" rel="noreferrer"><img src="images/linkedin.svg" alt="linkedinIcon" height="30px"></a>
-            <a href="mailto:andreasubashi2004@gmail.com"><img src="images/mail.svg" alt="gmailIcon" height="30px"></a>
-        </div>
-    </header>
-    <div class="education_sect">
-        <h3>Education</h3>
-        <h5>Bachelor</h5>
-        <p>Computer Science at Univeristy of New York Tirana (2022 - 2025)</p>
-        <p>GPA: 3.93/4</p>
-    </div>
-    <div class="experience_sect">
-        <h3>Experience</h3>
-        <h5>DoART</h5>
-        <p>Internship March 2024 - June 2024</p>
-        <p>Used HTML, CSS, JavaScript and React to build a modern user interface for the organization</p>
-        <h5>Sigma Insurance Group</h5>
-        <p>Internship July 2024 - September 2024</p>
-        <p>Data analysis using Python and R</p>
-    </div>
-    <div class="projects_sect">
-        <h3>Projects</h3>
-        <ul>
-            <li>Anime Database and Ranking Web Application</li>
-            <li>Fullstack CRUD ToDo Web Application</li>
-            <li>Fullstack Gallery Web Application</li>
-            <li>AI Job Matcher Web Application</li>
-        </ul>
-    </div>
-    <div class="extra_sect">
-        <h3>Additinal Information</h3>
-        <p>Part of the Math Club in Univerisity</p>
-        <p>I use Arch btw...</p>
-    </div>
-    <footer>
+    <div class="resume_container">
+        <header>
+            <div class="name_image">
+                <h2>Andrea Subashi</h2>
+                <img src="images/icon profile.jpg" alt="Andrea Subashi" id="profile">
+            </div>
+            <div class="contact_bar">
+                <h3>Contact: </h3>
+                <div class="icons">
+                    <a href="https://github.com/AndreaSubashi" target="_blank" rel="noreferrer"><img src="images/github.svg" alt="githubIcon"></a>
+                    <a href="https://www.linkedin.com/in/andreasubashi/" target="_blank" rel="noreferrer"><img src="images/linkedin.svg" alt="linkedinIcon"></a>
+                    <a href="mailto:andreasubashi2004@gmail.com"><img src="images/mail.svg" alt="gmailIcon"></a>
+                </div>
+            </div>
+        </header>
 
-    </footer>
+        <main class="resume">
+            <div class="education_sect">
+                <h3>Education</h3>
+                <p>Bachelor of Computer Science at University of New York Tirana (2022 - 2025)</p>
+                <p>GPA: 3.93/4</p>
+            </div>
+
+            <div class="experience_sect">
+                <h3>Experience</h3>
+                <div class="job">
+                    <h4>DoART</h4>
+                    <p>Front End Web Development Internship (March 2024 - June 2024)</p>
+                    <ul>
+                        <li>Used HTML, CSS, JavaScript, and React to build a modern user interface for the organization.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Sigma Insurance Group</h4>
+                    <p>Data analysis Internship (July 2024 - September 2024)</p>
+                    <ul>
+                        <li>Did data preparation and data analysis.</li>
+                        <li>Used SQL for querying the database, R & Python for data analysis, and Excel for less sensitive work.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="projects_sect">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="https://github.com/AndreaSubashi/anime-rating-app" target="_blank" rel="noreferrer">Anime Database and Rating Web Application</a></li>
+                    <li><a href="https://github.com/AndreaSubashi/plebejte" target="_blank" rel="noreferrer">Fullstack CRUD Gallery Web Application</a></li>
+                    <li><a href="https://github.com/AndreaSubashi/job-matcher" target="_blank" rel="noreferrer">AI Job Matcher Web Application</a></li>
+                </ul>
+            </div>
+
+            <div class="extra_sect">
+                <h3>Additional Information</h3>
+                <ul>
+                    <li>English C1 level</li>
+                    <li>Italian A2 level</li>
+                    <li>Part of the UNYT Math Center</li>
+                    <li>I use Arch btw...</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <div class="modal">
+        <img class="modal_content" alt="profile">
+        <span class="close">&times;</span>
+        <div id="caption"></div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
