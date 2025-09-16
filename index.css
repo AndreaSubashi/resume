@@ -30,8 +30,9 @@ header {
 
 .name_image {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .name_image h2 {
@@ -45,6 +46,10 @@ header {
 
 .name_image img:hover {
     transform: scale(1.1);
+}
+
+.location {
+    margin-top: -25px;
 }
 
 .contact_bar {
@@ -161,6 +166,52 @@ header {
   cursor: pointer;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip_content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #050b24;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  pointer-events: auto; 
+}
+
+.tooltip:hover .tooltip_content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copy_btn {
+  background-color: #0056b3;
+  border: none;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.copy_btn:hover {
+  background-color: #003d82;
+}
+
 @media (max-width: 600px) {
     .resume_container {
         padding: 20px 15px; 
@@ -177,5 +228,10 @@ header {
 
     .modal_content {
         width: 80%;
+    }
+
+    .tooltip_content {
+        left: 300%;
+        font-size: 14px;
     }
 }
