@@ -1,5 +1,5 @@
 body {
-    background-color: #191818; 
+    background-color: #050b24; 
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     display: flex; 
@@ -13,7 +13,7 @@ body {
 .resume_container {
     background-color: #fff; 
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 2px 2px 6px #0057b3; 
     max-width: 800px; 
     width: 100%;
     padding: 30px;
@@ -95,6 +95,10 @@ header {
     margin-bottom: 10px;
 }
 
+.projects_sect p {
+    font-size: 16px;
+}
+
 .resume a {
     color: #0056b3;
     text-decoration: none;
@@ -172,6 +176,6 @@ header {
     }
 
     .modal_content {
-        width: 100%;
+        width: 80%;
     }
 }
